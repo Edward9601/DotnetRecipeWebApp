@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecipeWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ab0aa04ac6b52fd59fe9bcbd0a97861e0bfd6df")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f6f09b5caaba9db66ae2cec24e436a9e389cec8")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecipeWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecipeWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

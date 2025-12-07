@@ -7,7 +7,7 @@ using RecipeWebApp.Models.Abstracts;
 public class RecipeDbContext : DbContext
 {
     public RecipeDbContext(DbContextOptions<RecipeDbContext> options): base(options)
-    {   
+    {
     }
     public DbSet<Recipe> Recipes {get; set;} = null!;
     public DbSet<RecipeCategory> RecipeCategories {get; set;} = null!;
@@ -17,9 +17,6 @@ public class RecipeDbContext : DbContext
     public DbSet<User> Users {get; set;} = null!;
     public DbSet<BaseImage> BaseImages {get; set;} = null!;
     public DbSet<IngredientMeasurementUnit> IngredientMeasurementUnits {get; set;} = null!;
-
-
-
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
