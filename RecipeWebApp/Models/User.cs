@@ -18,5 +18,7 @@ public class User
 
     public DateOnly DayRegistered {get; set;} = DateOnly.FromDateTime(DateTime.Now);
 
+    public UserImage? UserImage {get; set;}
+
     public IList<Recipe>? Recipes {get; set;} = new List<Recipe>();
 }

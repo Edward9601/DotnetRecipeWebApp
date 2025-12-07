@@ -10,6 +10,7 @@ namespace RecipeWebApp.Models;
 [Table("Recipes")]
 public class Recipe
 {
+    [Key]
     public int RecipeId {get; set;}
 
     public int AuthorId {get; set;}
@@ -25,6 +26,8 @@ public class Recipe
     public DateOnly DateCreated {get; set;} = DateOnly.FromDateTime(DateTime.Now);
     public DateOnly? LastUpdated {get; set;}
     public bool IsSubRecipe {get; set;} = false;
+
+    public RecipeImage? RecipeImage { get; set; }
 
     public IList<RecipeSubrecipe>? Subrecipes { get; set; } = new List<RecipeSubrecipe>();
     public IList<RecipeSubrecipe>? ParentRecipes { get; set; } = new List<RecipeSubrecipe>();
@@ -50,6 +53,5 @@ public class RecipeSubrecipe
     public int ParentRecipeId { get; set; }
     public Recipe ParentRecipe { get; set; } = null!;
     public int SubrecipeId { get; set; }
-
     public Recipe Subrecipe { get; set; } = null!;
 }
